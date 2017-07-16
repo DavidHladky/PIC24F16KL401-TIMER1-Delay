@@ -6,11 +6,6 @@
  * Created in July 16, 2017, 15:00
  */
 
-/* This tutorial shows simple generation of a delay with utiliaztion the Timer 1.
- * After setting a delay, the pin RB4 is toggling and the LED is periodically turned ON and OFF.
- * This toggling causes periodic blinking of the LED on the RB4 GPIO.is periodically turned ON and OFF.
- */   
-
 #include "xc.h"
 #include "config.h"
 /*
