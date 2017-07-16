@@ -8,11 +8,11 @@
 
 #include "tmr_delay.h"
 
-void TMR1DelayUs(uint16_t delay) // This function creates max delay approx. 4095 us. 
+void TMR1DelayUs(uint16_t DelayUs) // This function creates max delay approx. 4095 us. 
 {
   T1CONbits.TON = 0; // Disable the TIMER1.
   TMR1 = 0x0000;     // Reset the counter register of the TIMER1.
-  PR1 = 16*delay;    // Set the period register. An value in the period register determines the period when an owerflow occurs.
+  PR1 = 16*DelayUs;    // Set the period register. An value in the period register determines the period when an owerflow occurs.
   IFS0bits.T1IF = 0; // Clear interrupt flag for the TIMER1.
   T1CONbits.TCKPS = 0b00; // Set the prescaler to 1 -> 16 MHz = 62.5 ns
   T1CONbits.TON = 1;      // Enable the TIMER1.
@@ -21,11 +21,11 @@ void TMR1DelayUs(uint16_t delay) // This function creates max delay approx. 4095
   T1CONbits.TON = 0;      // Disable the TIMER1.
 }
 
-void TMR1DelayMs(uint16_t delay) // This function creates max delay approx. 262 ms. 
+void TMR1DelayMs(uint16_t DelayMs) // This function creates max delay approx. 262 ms. 
 {
   T1CONbits.TON = 0; // Disable the TIMER1.
   TMR1 = 0x0000;     // Reset the counter register of the TIMER1.
-  PR1 = 250*delay;   // Set the period register. An value in the period register determines the period when an owerflow occurs.
+  PR1 = 250*DelayMs;   // Set the period register. An value in the period register determines the period when an owerflow occurs.
   IFS0bits.T1IF = 0; // Clear interrupt flag for the TIMER1.
   T1CONbits.TCKPS = 0b10; // Set the prescaler to 64 -> 16 MHz = 4 us
   T1CONbits.TON = 1;      // Enable the TIMER1.

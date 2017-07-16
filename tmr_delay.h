@@ -9,7 +9,7 @@
 #include <stdint.h>
 #include "xc.h"
 
-void TMR1DelayUs(uint16_t delay); // This function creates max delay approx. 4095 us.  
+void TMR1DelayUs(uint16_t DelayUs); // This function creates max delay approx. 4095 us.  
 
-void TMR1DelayMs(uint16_t delay); // This function creates max delay approx. 262 ms. 
+void TMR1DelayMs(uint16_t DelayMs); // This function creates max delay approx. 262 ms. 
 
