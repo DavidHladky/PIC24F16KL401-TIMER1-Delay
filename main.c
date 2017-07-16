@@ -2,8 +2,8 @@
  * Revision 1.0
  * File:   main.c
  * Author: David Hladky
- * Example for the using the Timer 1 in the MCU PIC24F16KL401
- * Created July 16, 2017, 15:00
+ * Example for the using the TIMER1 in the MCU PIC24F16KL401
+ * Created in July 16, 2017, 15:00
  */
 
 /* This tutorial shows simple generation of a delay with utiliaztion the Timer 1.

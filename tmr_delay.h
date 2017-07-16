@@ -3,7 +3,7 @@
  * File:   tmr_delay.h
  * Author: David Hladky
  * Example for the using the TIMER1 in the MCU PIC24F16KL401
- * Created July 16, 2017, 15:00
+ * Created in July 16, 2017, 15:00
  */
 
 #include <stdint.h>
