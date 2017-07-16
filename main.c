@@ -2,7 +2,7 @@
  * Revision 1.0
  * File:   main.c
  * Author: David Hladky
- * Example for the using the TIMER1 in the MCU PIC24F16KL401
+ * Example of using the TIMER1 to generate a delay.
  * Created in July 16, 2017, 15:00
  */
 
